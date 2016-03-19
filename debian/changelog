@@ -1,3 +1,25 @@
+hal-flash (0.3.3-1) unstable; urgency=medium
+
+  * Initial upload to unstable (Closes: #818167)
+  * debian/source/format
+    - Use quilt format.
+  * debian/control
+    - Update standards-version to 3.9.7
+    - Use hal-flash as a source package name
+    - Update maintainer field as debian package
+    - Remove VCS- field template
+    - Fix suggest package name (flashplugin-nonfree) for debian
+  * debian/watch
+    - Add watch file
+  * debian/rules
+    - Apply hardening=+all
+    - Remove sample header comment
+    - Remove needless symbolic link file (libhal.so)
+  * debian/libhal1-flash.symbols
+    - Add symbols control file
+
+ -- HAYASHI Kentaro <hayashi@clear-code.com>  Sat, 19 Mar 2016 15:47:35 +0900
+
 libhal1-flash (0.3.3) unstable; urgency=low
 
   * Documentation update
@@ -26,4 +48,4 @@ libhal1-flash (0.2.0rc1) unstable; urgency=low
 
   * Initial Release.
 
- -- Christopher Horler <chorler@debian>  Wed, 29 May 2013 20:38:36 +0100
+ -- Christopher Horler <cshorler@googlemail.com>  Wed, 29 May 2013 20:38:36 +0100

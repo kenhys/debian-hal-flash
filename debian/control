@@ -1,16 +1,29 @@
-Source: libhal1-flash
+Source: hal-flash
 Priority: extra
-Maintainer: Christopher Horler <cshorler@googlemail.com>
+Maintainer: HAYASHI Kentaro <hayashi@clear-code.com>
 Build-Depends: debhelper (>= 9), dh-autoreconf, pkg-config, libdbus-1-dev, libglib2.0-dev
-Standards-Version: 3.9.6
+Standards-Version: 3.9.7
 Section: libs
 Homepage: https://github.com/cshorler/hal-flash
-#Vcs-Git: git://git.debian.org/collab-maint/libhal1-flash.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/libhal1-flash.git;a=summary
 
 Package: libhal1-flash
-Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, udisks2
-Suggests: flashplugin-installer
+Suggests: flashplugin-nonfree
 Description: Compatibility library to allow playback of Flash DRM content
+ A libhal stub library forwarding to UDisks specifically to satisfy the
+ libflashplayer.so / libadobecp requirements.
+ .
+ It is loosely based upon libhal.[ch] from the hal-0.5.14 package
+ for the external interface presented by the shared library libhal.
+ Further information on HAL can be found here:
+ http://www.freedesktop.org/wiki/Software/hal
+ .
+ The Adobe Flash web browser plugin for Linux relies upon libhal to provide
+ information required by libadobecp (which libflashplayer.so retrieves
+ from the internet) for playing back drm content.
+ .
+ Since HAL is no longer centric to most modern Linux systems (now there
+ are succeeded product such as UDev, UDisks and so on).
+ This library provides thin wrapper until such time as HTML5 becomes
+ standard for online TV (many sites continue to use Flash).
