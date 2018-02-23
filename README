@@ -1,0 +1,27 @@
+This is the libhal-flash package.
+
+It is loosely based upon libhal.[ch] from the hal-0.5.14 package for the external interface presented by the shared library libhal.  Further information on HAL can be found here:  http://www.freedesktop.org/wiki/Software/hal
+
+WARNING - this is not a fully functional HAL layer!
+
+The Adobe Flash web browser plugin for Linux relies upon libhal to provide
+information required by libadobecp (which libflashplayer.so retrieves from the
+internet) for playing back drm content.
+
+Since HAL is no longer centric to most modern Linux systems (now we have UDev,
+UDisks etc) - I'm only providing this library until such time as HTML5 becomes
+standard for online TV (many sites continue to use Flash).
+
+RUNTIME REQUIREMENTS
+
+Note - This library requires UDisks2 and a running DBus service!
+
+TESTING INSTALLATION
+
+Adobe provides a test web page for DRM content and a test video required to run the test.
+Enter this into your browser:
+http://drmtest2.adobe.com:8080/SVP/SampleVideoPlayer_FP.html
+Enter this into the form:
+http://drmtest2.adobe.com:8080/Content/anonymous.f4v
+Press play.
+

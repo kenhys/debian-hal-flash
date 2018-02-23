@@ -1,0 +1,29 @@
+libhal1-flash (0.3.3) unstable; urgency=low
+
+  * Documentation update
+
+ -- Christopher Horler <cshorler@googlemail.com>  Thu, 27 Aug 2015 22:12:20 +0100
+
+libhal1-flash (0.3.2) unstable; urgency=low
+
+  * Bug fix: string array issue
+
+ -- Christopher Horler <cshorler@googlemail.com>  Thu, 27 Aug 2015 22:12:20 +0100
+
+libhal1-flash (0.3.1) unstable; urgency=low
+
+  * Updated Debian packaing to fixed lintian warnings and errors.
+
+ -- Martin Wimpress <code@flexion.org>  Tue, 19 May 2015 06:23:13 -0100
+
+libhal1-flash (0.3.0) unstable; urgency=low
+
+  * Add glib-dev as a build dependency
+
+ -- Ryan Nowakowski <tubaman@fattuba.com>  Fri, 16 Jan 2015 17:52:23 -0600
+
+libhal1-flash (0.2.0rc1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Christopher Horler <chorler@debian>  Wed, 29 May 2013 20:38:36 +0100
