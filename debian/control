@@ -1,7 +1,12 @@
 Source: hal-flash
 Priority: extra
 Maintainer: Kentaro Hayashi <hayashi@clear-code.com>
-Build-Depends: debhelper (>= 9), dh-autoreconf, pkg-config, libdbus-1-dev, libglib2.0-dev
+Build-Depends:
+  debhelper (>= 9),
+  dh-autoreconf,
+  pkg-config,
+  libdbus-1-dev,
+  libglib2.0-dev
 Standards-Version: 3.9.7
 Section: libs
 Homepage: https://github.com/cshorler/hal-flash
