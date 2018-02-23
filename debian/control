@@ -1,5 +1,5 @@
 Source: hal-flash
-Priority: extra
+Priority: optional
 Maintainer: Kentaro Hayashi <hayashi@clear-code.com>
 Build-Depends:
   debhelper (>= 11),
