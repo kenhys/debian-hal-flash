@@ -1,3 +1,10 @@
+hal-flash (0.3.3-2) unstable; urgency=medium
+
+  * debian/control
+    - Update maintainer name.
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Fri, 23 Feb 2018 12:43:44 +0900
+
 hal-flash (0.3.3-1) unstable; urgency=medium
 
   * Initial upload to unstable (Closes: #818167)
