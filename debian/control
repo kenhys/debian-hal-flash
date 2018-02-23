@@ -3,7 +3,6 @@ Priority: optional
 Maintainer: Kentaro Hayashi <hayashi@clear-code.com>
 Build-Depends:
   debhelper (>= 11),
-  dh-autoreconf,
   pkg-config,
   libdbus-1-dev,
   libglib2.0-dev
